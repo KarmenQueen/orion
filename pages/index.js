@@ -56,7 +56,7 @@ const Index = () => {
               
               <optgroup label="TERCER SEMESTRE">
                   <option value="5">FÍSICA: MECÁNICA</option>
-                  <option value="6"> 	ECUACIONES DIFERENCIALES PARA INGENIERÍA</option>
+                  <option value="6">ECUACIONES DIFERENCIALES PARA INGENIERÍA</option>
                   <option value="7">CÁLCULO EN VARIAS VARIABLES</option>
                   <option value="8">ESTRUCTURA DE DATOS Y ALGORITMOS</option>
               </optgroup>
@@ -64,34 +64,31 @@ const Index = () => {
               <optgroup label="CUARTO SEMESTRE">
                   <option value="9">FÍSICA: ONDAS Y ELECTROMAGNETISMO</option>
                   <option value="10">MÉTODOS NUMÉRICOS PARA INGENIERÍA</option>
-                  <option value="11">CÁLCULO EN UNA VARIABLE</option>
-                  <option value="12">FÍSICA: MECÁNICA</option>
-                  <option value="13">ECUACIONES DIFERENCIALES PARA INGENIERÍA</option>
-                  <option value="14">ESTRUCTURAS DISCRETAS</option>
+                  <option value="11">ESTRUCTURAS DISCRETAS</option>
               </optgroup>
               
               <optgroup label="QUINTO SEMESTRE">
-                  <option value="9">ARQUITECTURA DE COMPUTADORES </option>
-                  <option value="10">TEORÍA DE AUTÓMATAS</option>
-                  <option value="11">DISEÑO Y ANÁLISIS DE ALGORITMOS</option>
+                  <option value="12">ARQUITECTURA DE COMPUTADORES</option>
+                  <option value="13">TEORÍA DE AUTÓMATAS</option>
+                  <option value="14">DISEÑO Y ANÁLISIS DE ALGORITMOS</option>
               </optgroup>
               
               <optgroup label="SEXTO SEMESTRE">
-                  <option value="9">PROGRAMACIÓN EN PARADIGMAS FUNCIONAL Y PARALELO</option>
+                  <option value="15">PROGRAMACIÓN EN PARADIGMAS FUNCIONAL Y PARALELO</option>
               </optgroup>
 
               <optgroup label="SEPTIMO SEMESTRE">
-                  <option value="9">COMUNICACIONES</option>
-                  <option value="10">INTELIGENCIA ARTIFICIAL</option>
+                  <option value="16">COMUNICACIONES</option>
+                  <option value="17">INTELIGENCIA ARTIFICIAL</option>
               </optgroup>
 
               <optgroup label="OCTAVO SEMESTRE">
-                  <option value="9">REDES</option>
-                  <option value="10">TALLER DE INGENIERÍA DE SOFTWARE</option>
+                  <option value="18">REDES</option>
+                  <option value="19">TALLER DE INGENIERÍA DE SOFTWARE</option>
               </optgroup>
 
               <optgroup label="NOVENO SEMESTRE">
-                  <option value="9">SISTEMAS DISTRIBUIDOS</option>
+                  <option value="20">SISTEMAS DISTRIBUIDOS</option>
               </optgroup>
           </select>
         </label>
