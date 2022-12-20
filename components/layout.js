@@ -6,18 +6,13 @@ import Image from "next/image";
 
 const Layout = ({ children, pageId }) => {
   return (
-    <div className="container">
-      <div className="img">
-      <Image id="imagen"
-          src="/images/astronomia.png"
-          height={80} // Desired size with correct aspect ratio
-          width={80} // Desired size with correct aspect ratio
-          alt="ojo"
-        />
+  <div>
+  <center>
+      <div className="container">
+        <h1 className="title5">ORION</h1>
       </div>
-
-      <h1 className="title5">ORION</h1>
-      <a className="btn-neon2" href="/form" rel="noopener noreferrer">
+    </center>
+        <a className="btn-neon2" href="/form">
           <span id="spans1"></span>
           <span id="spans2"></span>
           <span id="spans3"></span>
@@ -31,7 +26,7 @@ const Layout = ({ children, pageId }) => {
           <span id="spanss4"></span>
           IR A INICIO
         </a>
-    </div>
+  </div>
   );
 };
 export default Layout;

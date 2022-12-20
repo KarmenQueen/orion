@@ -3,7 +3,6 @@
 html,
 body {
   margin: 0;
-  
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   
@@ -13,6 +12,7 @@ body {
 
 * {
   box-sizing: border-box;
+  background-color: #130831;
 }
 #bloquePrincipal{
   width: 100%;
@@ -34,13 +34,10 @@ body {
 
 }
 .container {
-  min-height: 0cm;
-  padding: 0 0.05rem;
-  position:static;
-  display:block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 500px;
+  height: 10px;
+  display:list-item;
+  position:unset;
   background-color: #130831;
 }
 .title3 {
@@ -65,8 +62,7 @@ body {
 }
 
 .title5 {
-  position:absolute;
-  right: 16cm;
+  position:relative ;
   margin:0cm;
   line-height: 1.15;
   font-size: 5rem;
@@ -93,6 +89,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+
 }
 
 footer img {
@@ -301,7 +299,7 @@ code {
   min-width: 100px;
   margin: 0 auto;
   border: 1px solid #3C1C78;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   opacity: 0.85;
   z-index: 10;
   top: 50px;
@@ -309,7 +307,7 @@ code {
 .custom-select select {
   border:#714BB9;
   outline: none;
-  background: transparent;
+  background:scroll;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -319,7 +317,9 @@ code {
   width: 100%;
   padding: 12px 55px 15px 15px;
   font-size: 20px;
-  color: #714BB9;
+  color: #9266e4;
+  
+  
 }
 .custom-select:after {
   position: absolute;
@@ -334,13 +334,14 @@ code {
   font-size: 24px;
   border-left: 1px solid #3C1C78;
   z-index: -1;
+  
 }
 
 /* LAYAOUT*/
 
 /* BOTON SUBIR MATERIAL*/
 .btn-neon2{
-  left: 19.5cm;
+  left: 48%;
   position: relative;
   display: inline-block;
   margin: 15px;
@@ -411,7 +412,7 @@ code {
 
 /* BOTON VOLVER AL INICIO*/
 .btn-neon3{
-  right: 21cm;
+  right: 51%;
   position: relative;
   display: inline-block;
   margin: 15px;
@@ -512,7 +513,7 @@ code {
 	font-size: 18px;
 	padding: 10px;
 	margin-bottom: 5px;
-	color: #1f1f1f;
+	color: #ffffff;
 }
 
 .formulario input:focus {
@@ -625,9 +626,8 @@ code {
 }
 
 .img{
-  position:absolute;
   left: 16cm;
-  margin: 0.2cm;
+  margin: 0cm;
 }
 
 .img2{
