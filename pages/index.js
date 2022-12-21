@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Layout from "../components/layout";
 import React, { useState } from 'react'; 
 import {useLocalStorage} from './useLocalStorage'
 
@@ -24,8 +23,19 @@ const Index = () => {
 
   return(
     <div className="App">
-      <Layout></Layout>
       <header className="App-header">
+      <div className="fondo">
+          <center>
+            
+            <Image
+                src="/images/astronomia.png"
+                height={80} // Desired size with correct aspect ratio
+                width={80} // Desired size with correct aspect ratio
+                alt="ojo"/>
+              <h1 className="title5">ORION</h1>
+          </center>
+      </div>
+        
         <Image
           src="/images/2130-removebg-preview.png"
           height={400} // Desired size with correct aspect ratio

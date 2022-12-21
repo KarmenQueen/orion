@@ -1,15 +1,21 @@
 import Head from "next/head";
 import Link from "next/link";
-import ViewCount from "../components/viewCount";
+
 import React, { useState } from "react";
 import Image from "next/image";
 
 const Layout = ({ children, pageId }) => {
   return (
-  <div>
+  <div className="fondo">
   <center>
       <div className="container">
-        <h1 className="title5">ORION</h1>
+      <Image
+                src="/images/astronomia.png"
+                height={80} // Desired size with correct aspect ratio
+                width={80} // Desired size with correct aspect ratio
+                alt="ojo"
+            />
+        <h1 className="title5"> ORION </h1>
       </div>
     </center>
         <a className="btn-neon2" href="/form">

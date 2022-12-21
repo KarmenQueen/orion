@@ -1,82 +1,102 @@
 { 
     "1":{ 
         "nombre": "ÁLGEBRA PARA INGENIERÍA",
-        "codigo": "BAIN065"
+        "codigo": "BAIN065",
+        "descripcion": "La asignatura de “Álgebra para ingeniería” tiene como principal propósito proporcionar al estudiante la formación inicial del área matemática, abarcando los temas fundamentales de lógica, números reales, sucesiones, funciones, límites y continuidad. Durante el desarrollo de este curso se fomenta el razonamiento lógico algebraico en conjunto con la resolución de problemas."
     },
     "2":{ 
         "nombre": "GEOMETRÍA PARA INGENIERÍA",
-        "codigo": "BAIN067"
+        "codigo": "BAIN067",
+        "descripcion": "La asignatura de “Geometría para ingeniería” tiene como principal propósito proporcionar al estudiante la formación inicial del área matemática, abarcando los temas fundamentales de la geometría analítica, trigonometría y geometría vectorial, fomentando el razonamiento geométrico y la resolución de problemas en contexto." 
     },
     "3":{ 
         "nombre": "ÁLGEBRA LINEAL PARA INGENIERÍA",
-        "codigo": "BAIN073"
+        "codigo": "BAIN073",
+        "descripcion": "La asignatura de 'Álgebra Lineal para Ingeniería' tiene como principal propósito que las y los estudiantes utilicen herramientas para resolver problemas de Ingeniería, desarrollando habilidades tales como: el razonamiento lógico matemático y la resolución de problemas, aplicando conceptos y métodos matemáticos, proporcionando elemento claves para el desarrollo de cursos posteriores."
     },
     "4":{ 
         "nombre": "CÁLCULO EN UNA VARIABLE",
-        "codigo": "BAIN075"
+        "codigo": "BAIN075",
+        "descripcion": "La asignatura de “Cálculo en una variable” tiene como principal propósito que las y los estudiantes relacionen el estudio de la teoría y aplicaciones del cálculo en una variable, el cálculo integral y la representación de funciones como una serie de potencia."
     },
     "5":{ 
         "nombre": "FÍSICA: MECÁNICA",
-        "codigo": "BAIN077"
+        "codigo": "BAIN077",
+        "descripcion": "La asignatura de “Física: mecánica” tiene como principal propósito que las y los estudiantes resuelvan problemáticas empleando conceptos relacionados con los movimientos de los cuerpos, aplicando la teoría a una serie de laboratorios en torno a temas de Ingeniería."
     },
     "6":{ 
         "nombre": "ECUACIONES DIFERENCIALES PARA INGENIERÍA",
-        "codigo": "BAIN081"
+        "codigo": "BAIN081",
+        "descripcion": "La asignatura de “Ecuaciones diferenciales para ingeniería” tiene como principal propósito que las y los estudiantes modelen fenómenos físicos en el contexto de la ingeniería, mediante el uso de ecuaciones diferenciales ordinarias, de primer y segundo orden, y sistemas de ecuaciones diferenciales lineales. Durante el desarrollo del curso se abarcan temas tales como existencia y unicidad de soluciones, métodos de resolución e interpretación de resultados. "
     },
     "7":{ 
         "nombre": "CÁLCULO EN VARIAS VARIABLES",
-        "codigo": "BAIN083"
+        "codigo": "BAIN083",
+        "descripcion": "La asignatura de “Cálculo en Varias Variables para Ingeniería” generaliza los conceptos de continuidad y diferenciabilidad para varias variables, en general, para tres variables, orientado como punto principal la optimización usando Multiplicadores de Lagrange y el Teorema de Taylor. En la segunda parte del curso se sigue con la teoría de integración de funciones escalares y vectoriales en varias variables, culminando con los Teoremas de Green, Gauss y Stokes."
     },
     "8":{ 
         "nombre": "ESTRUCTURA DE DATOS Y ALGORITMOS",
-        "codigo": "INFO085"
+        "codigo": "INFO085",
+        "descripcion": "La asignatura de “Estructuras de datos y algoritmos” tiene como principal propósito que los estudiantes utilicen las técnicas que permitan el diseño y desarrollo de algoritmos correctos, claros y eficientes, además de manejar las distintas estructuras de datos. Con lo anterior será capaz de seleccionar, justificando la estructura de datos más adecuada para un problema dado."
     },
     "9":{ 
         "nombre": "FÍSICA: ONDAS Y ELECTROMAGNETISMO",
-        "codigo": "BAIN085"
+        "codigo": "BAIN085",
+        "descripcion": "En el curso “Ondas y Electromagnetismo” usted conocerá una gran variedad de fenómenos físicos y aplicaciones tecnológicas de la vida cotidiana, como por ejemplo ondas estacionarias en una cuerda, el sonido, campos magnéticos creados por corriente eléctrica, electromotores, generadores eléctricos, ondas de radio, etc. Estos fenómenos se pueden comprender y describir mediante conceptos básicos de la física y el razonamiento causa-efecto. El curso ofrece una introducción general a estos temas y el estudiante desarrollará la capacidad de analizar y modelar matemáticamente diversas situaciones físicas en el marco de solución de problemas."
     },
     "10":{ 
         "nombre": "MÉTODOS NUMÉRICOS PARA INGENIERÍA",
-        "codigo": "BAIN087"
+        "codigo": "BAIN087",
+        "descripcion": "La asignatura de “Métodos Numéricos para Ingeniería” tiene como principal propósito proporcionar al estudiante estrategias de solución numérica y la implementación de los algoritmos asociados para aquellos problemas que en la práctica no tienen solución analítica o bien dicha solución es muy costosa."
     },
     "14":{ 
         "nombre": "ESTRUCTURAS DISCRETAS",
-        "codigo": "INFO099"
+        "codigo": "INFO099",
+        "descripcion": "La asignatura de “Estructuras discretas” tiene como principal propósito que los estudiantes resuelvan problemas empleando la abstracción y el razonamiento lógico, sistemático y ordenado en el área de la matemática discreta para informática, abarcando los temas fundamentales de la teoría de conjuntos, relaciones, funciones, estructuras algebraicas (monoides, grupos, grafos, álgebras de Boole) y lógica contextualizados en el ámbito de las ciencias de la computación."
     },
     "15":{ 
         "nombre": "ARQUITECTURA DE COMPUTADORES",
-        "codigo": "INFO128"
+        "codigo": "INFO128",
+        "descripcion": "La asignatura de 'Arquitectura de computadores' tiene como principal propósito que los estudiantes relacionen, analicen los conceptos hardware fundamentales para comprender el funcionamiento y organización del computador moderno basado en la arquitectura Von Neumann."
     },
     "16":{ 
         "nombre": "TEORÍA DE AUTÓMATAS",
-        "codigo": "INFO139"
+        "codigo": "INFO139",
+        "descripcion": "La asignatura de “Teoría de autómatas” tiene como principal propósito que los estudiantes resuelvan problemas en el ámbito de las ciencias de la computación, empleando los tres tipos fundamentales de mecanismos de definición de lenguajes (gramáticas regulares, gramáticas de libre contexto y gramáticas no restringidas), los tres tipos de máquinas correspondientes para su reconocimiento (autómatas finitos, autómatas de pila y máquinas de Turing) y las propiedades fundamentales de las familias de lenguajes por ellos definidas."
     },
     "17":{ 
         "nombre": "DISEÑO Y ANÁLISIS DE ALGORITMOS",
-        "codigo": "INFO145"
+        "codigo": "INFO145",
+        "descripcion": "La asignatura de 'Diseño y análisis de algoritmos' tiene como principal propósito que los estudiantes diseñen algoritmos y analicen su complejidad de manera asintótica, utilizando herramientas matemáticas y estrategias esenciales de ciencias de la computación."
     },
     "18":{ 
         "nombre": "PROGRAMACIÓN EN PARADIGMAS FUNCIONAL Y PARALELO",
-        "codigo": "INFO188"
+        "codigo": "INFO188",
+        "descripcion": "La asignatura de 'Programación en paradigmas funcional y paralelo' tiene como principal propósito que los estudiantes analicen fundamentos y principios de los paradigmas de programación funcional y programación paralela, que les permitan tomar decisiones para identificar en qué tipo de problemas conviene aplicarlos."
     },
     "19":{ 
         "nombre": "COMUNICACIONES",
-        "codigo": "INFO239"
+        "codigo": "INFO239",
+        "descripcion": "La asignatura de “Comunicaciones” tiene como principal propósito que los estudiantes diseñen soluciones robustas de sistemas de comunicación digital a través de la aplicación de los fundamentos del modelo TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet), con énfasis en la capa física y de enlace, de la transmisión digital de información, y empleando estándares correspondientes."
     },
     "20":{ 
         "nombre": "INTELIGENCIA ARTIFICIAL",
-        "codigo": "INFO257"
+        "codigo": "INFO257",
+        "descripcion": "La asignatura de 'Inteligencia Artificial' tiene como principal propósito que los estudiantes analicen temáticas referidas a inteligencia artificial, aplicando estrategias de aprendizaje supervisado, aprendizaje no supervisado y algoritmos de búsqueda con heurísticas para resolver problemas aplicados. "
     },
     "21":{ 
         "nombre": "REDES",
-        "codigo": "INFO276"
+        "codigo": "INFO276",
+        "descripcion": "La asignatura de “Redes” tiene como principal propósito que los estudiantes diseñen soluciones robustas de sistemas de comunicación modernos, aplicando los fundamentos del modelo TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet), con énfasis en las capas de red, transporte y aplicación del modelo de información, empleando estándares correspondientes."
     },
     "22":{ 
         "nombre": "TALLER DE INGENIERÍA DE SOFTWARE",
-        "codigo": "INFO282"
+        "codigo": "INFO282",
+        "descripcion": ""
     },
     "23":{ 
         "nombre": "SISTEMAS DISTRIBUIDOS",
-        "codigo": "INFO288"
+        "codigo": "INFO288",
+        "descripcion": "La asignatura de 'Sistemas distribuidos' tiene como propósito que los estudiantes diferencien sistemas distribuidos y sistemas centralizados, describiendo el funcionamiento y los objetivos de sistemas distribuidos en términos de protocolos de comunicación, de sistema de archivos y de seguridad, y utilizando de manera práctica uno o varios frameworks que permiten desarrollar o procesar datos con sistemas distribuidos."
     }
 }
