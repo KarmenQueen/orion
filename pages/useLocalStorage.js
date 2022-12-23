@@ -13,9 +13,9 @@ export function useLocalStorage (key, initialValue){
         try {
             setStoredValue(value)
             window.localStorage.setItem(key,JSON.stringify(value));
-          }catch (error) {
+        }catch (error) {
             console.error(error);
-          }
+        }
     }
 
     

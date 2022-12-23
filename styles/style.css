@@ -30,9 +30,6 @@ body {
   border: 2px dashed #6f66f0;
   
 }
-#contenidoPrincipal{
-
-}
 .container {
   width: 500px;
   height: 10px;
@@ -79,7 +76,7 @@ body {
 
 .title6 {
   position:relative ;
-  margin:0cm;
+  margin:1.5cm;
   line-height: 1.15;
   font-size: 3rem;
   padding-bottom: 0px;
@@ -157,8 +154,7 @@ a {
   font-size: 0.8em;
   cursor: pointer;
 }
-.todo-list {
-}
+
 .todo-item {
   display: flex;
   padding: 10px;
@@ -428,7 +424,7 @@ code {
 
 /* BOTON VOLVER AL INICIO*/
 .btn-neon3{
-  right: 51%;
+  right: 43%;
   position: relative;
   display: inline-block;
   margin: 15px;
