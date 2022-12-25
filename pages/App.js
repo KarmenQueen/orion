@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from './data.json';
 import {Table, Button, Container, Modal, ModalHeader, ModalBody, FormGroup, ModalFooter,} from "reactstrap";
+import Layout from "../components/layout";
+
 
 class App extends React.Component{
   
@@ -89,6 +91,7 @@ class App extends React.Component{
     return (
       <>
         <Container>
+        
         <br />
           <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Crear</Button>
           <br />
@@ -106,7 +109,6 @@ class App extends React.Component{
             <tbody>
               {this.state.data.map((dato) => (
                 <tr key={dato.id}>
-
                   <td>{dato.nombre}</td>
                   <td>{dato.link}</td>
                   <td>{dato.descripcion}</td>
@@ -195,10 +197,7 @@ class App extends React.Component{
           </ModalHeader>
   
           <ModalBody>
-            <FormGroup>
 
-            </FormGroup>
-              
             <FormGroup>
               <label>
                 Nombre: 
