@@ -15,8 +15,19 @@
 
 .App-header {
   background-color: #130831;
-  min-height: 100vh;
-  display: flex;
+  min-height: 130vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Appp-header {
+  background-color: #130831;
+  min-height:max-content;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

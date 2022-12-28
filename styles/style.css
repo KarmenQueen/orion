@@ -98,7 +98,13 @@ body {
 	font-weight: 600;
 	color: #fff;
 }
-
+.title8 {
+  margin:0.2cm;
+  line-height: 1.15;
+  font-size: 1rem;
+  padding-bottom: 0px;
+  font-family: 'Courier New', Courier, monospace;
+}
 main {
   padding: 4rem 0;
   flex: 1;
@@ -658,7 +664,9 @@ code {
 }
 
 .img2{
-  margin: 0.3cm;
+  
+  margin: 0.2cm;
+  
 }
 
 .btn-neonlink{
@@ -710,5 +718,25 @@ code {
   background: #8864e6;
   box-shadow: 0 0 10px #8864e6, 0 0 40px #8864e6, 0 0 80px #8864e6;
   transition-delay: 0s;
+}
+
+
+
+.star {
+  color: rgb(147, 142, 142);
+  opacity: 100;
+  
+}
+
+.star:hover {
+  
+  fill: #d4de61;
+  color: #d4de61;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.star:focus{
+  fill: #d4de61;
+  color: #d4de61;
 }
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from 'react'; 
 import {useLocalStorage} from './useLocalStorage'
+import {Tooltip} from "@chakra-ui/react";
 
 const Index = () => {
 
@@ -37,7 +38,7 @@ const Index = () => {
       </div>
         
         <Image
-          src="/images/2130-removebg-preview.png"
+          src="/images/24OD.gif"
           height={400} // Desired size with correct aspect ratio
           width={400} // Desired size with correct aspect ratio
           alt="ojo"
@@ -53,7 +54,7 @@ const Index = () => {
             id="styledSelect1" name="options"
             onClick={logValue}
             >
-              <option aria-disabled>CLICK AQUI PARA VER RAMOS</option>
+              <option value = '' disabled selected>LISTA DE RAMOS</option>
               <optgroup label="PRIMER SEMESTRE">
               <option value="1">ÁLGEBRA PARA INGENIERÍA</option>
               <option value="2">GEOMETRÍA PARA INGENIERÍA</option>
@@ -102,17 +103,19 @@ const Index = () => {
               </optgroup>
           </select>
         </label>
-        <a
-          className="btn-neonb" 
-          href="material" 
-          rel="noopener noreferrer"
-          >
-            <span id="spansb1"></span>
-            <span id="spansb2"></span>
-            <span id="spansb3"></span>
-            <span id="spansb4"></span>
-            🔍︎
-        </a>
+        <Tooltip label='Buscar' fontSize='md'>                     
+          <a
+            className="btn-neonb" 
+            href="material" 
+            rel="noopener noreferrer"
+            >
+              <span id="spansb1"></span>
+              <span id="spansb2"></span>
+              <span id="spansb3"></span>
+              <span id="spansb4"></span>
+              🔍︎
+          </a>
+          </Tooltip>
 
         <a className="btn-neon" href="/respuesta" rel="noopener noreferrer">
           <span id="span1"></span>

@@ -1,10 +1,11 @@
 import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
 import Layout from "../components/layout";
+import { AiFillHeart, AiOutlineRocket} from "react-icons/ai";
+
 import {
-    Box,
-    Flex,
-    Headers,
     Button,
+    Box,
+    Tooltip,
     useDisclosure,
     Table,
     Thead,
@@ -25,7 +26,14 @@ const App = () => {
     const [dataEdit, setDataEdit] = useState({});
     const [value, setValue] = useLocalStorage("value","");
     const [value2, setValue2] = useState("1");
-    
+    const [like, setLike] = useState(0)
+    const [isLike, setIsLike] = useState(false),
+    onLikeButtonClick = () => {
+        setLike(like + (isLike?-1:1));
+        setIsLike(!isLike);
+    };
+    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
     useEffect(()=>{
         setValue2(value);
     },[]);
@@ -60,52 +68,45 @@ const App = () => {
                 <p className="title">{ramosData[value2].nombre}</p>
                 <p className="title3">CÓDIGO: {ramosData[value2].codigo}</p>
                 
-            <Box maxW={1500} w="100%" h="100vh" py={10} px={2}>
-        <p className="description">{ramosData[value2].descripcion}</p>
-            <a className="btn-neonlink" onClick={() => [setDataEdit({}), onOpen()]}>
-            AGREGAR LINK
-            </a>
-            <Box overflowY="auto" height="100%">
-            <Table mt="6">
-                <Thead>
-                <Tr>
-                    <Th maxW={isMobile ? 5 : 100} fontSize="20px" color={"withe"}>
-                    Nombre
-                    </Th>
-                    <Th maxW={isMobile ? 5 : 100} fontSize="20px"color={"withe"}>
-                    Link
-                    </Th>
-                    
-                    <Th p={0}></Th>
-                    <Th p={0}></Th>
-                </Tr>
-                </Thead>
-                <Tbody>
-                {data.map(({ name, email }, index) => (
-                    <Tr key={index} cursor="pointer " _hover={{ bg: "#714BB9" }}>
-                    <Td maxW={isMobile ? 5 : 100}>{name}</Td>
-                    <Td maxW={isMobile ? 5 : 100}>{email}</Td>
-                    <Td p={0}>
-                        <EditIcon
-                        fontSize={20}
-                        onClick={() => [
-                            setDataEdit({ name, email, index }),
-                            onOpen(),
-                        ]}
-                        />
-                    </Td>
-                    <Td p={0}>
-                        <DeleteIcon
-                        fontSize={20}
-                        onClick={() => handleRemove(email)}
-                        />
-                    </Td>
+                <Box maxW={1500}  py={10} px={2}>
+                <p className="description">{ramosData[value2].descripcion}</p>
+                <a className="btn-neonlink" onClick={() => [setDataEdit({}), onOpen()]}>
+                    AGREGAR LINK
+                </a>
+                <Box >
+                <Table mt="6">
+                    <Thead>
+                    <Tr>
+                        <Th maxW={isMobile ? 5 : 100} fontSize="20px" color={"withe"}>
+                        Nombre
+                        </Th>
+                        <Th maxW={isMobile ? 5 : 100} fontSize="20px"color={"withe"}>
+                        Link
+                        </Th>
+                        <Th maxW={isMobile ? 5 : 100} fontSize="20px" color={"withe"}>
+                        Descripcion
+                        </Th>
+                        
+                        <Th p={0}></Th>
+                        <Th p={0}></Th>
+                        <Th p={0}></Th>
+                        <Th p={0}></Th>
                     </Tr>
-                ))}
-                </Tbody>
-            </Table>
+                    </Thead>
+                    <Tbody>
+                    {data.map(({ name, email, descripcion }, index) => (
+                        <Tr key={index} cursor="pointer " _hover={{ bg: "#714BB9" }}>
+                        <Td maxW={isMobile ? 5 : 100}>{name}</Td>
+                        <Td maxW={isMobile ? 5 : 100}>{email}</Td>
+                        <Td maxW={isMobile ? 5 : 100}>{descripcion}</Td>
+                        
+                        
+                        </Tr>
+                    ))}
+                    </Tbody>
+                </Table>
+                </Box>
             </Box>
-        </Box>
         {isOpen && (
             <ModalComp
             isOpen={isOpen}
