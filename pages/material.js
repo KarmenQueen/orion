@@ -22,6 +22,9 @@ import ramosData from "./ramos.json";
 
 const App = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
+
+    
+
     const [data, setData] = useState([]);
     const [dataEdit, setDataEdit] = useState({});
     const [value, setValue] = useLocalStorage("value","");
@@ -32,6 +35,9 @@ const App = () => {
         setLike(like + (isLike?-1:1));
         setIsLike(!isLike);
     };
+    
+
+
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
     useEffect(()=>{
@@ -60,6 +66,9 @@ const App = () => {
 
         localStorage.setItem("cad_cliente", JSON.stringify(newArray));
     };
+
+    const data2 = data.filter((item) => item.ramo == value2);
+    
 
     return (
         <div className="App">
@@ -94,13 +103,18 @@ const App = () => {
                     </Tr>
                     </Thead>
                     <Tbody>
-                    {data.map(({ name, email, descripcion }, index) => (
+                    {data2.map(({ name, email, descripcion, ramo }, index) => (
                         <Tr key={index} cursor="pointer " _hover={{ bg: "#714BB9" }}>
                         <Td maxW={isMobile ? 5 : 100}>{name}</Td>
                         <Td maxW={isMobile ? 5 : 100}>{email}</Td>
                         <Td maxW={isMobile ? 5 : 100}>{descripcion}</Td>
                         
-                        
+                        <Td p={0}>
+                            <DeleteIcon
+                            fontSize={20}
+                            onClick={() => handleRemove(email)}
+                            />
+                        </Td>
                         </Tr>
                     ))}
                     </Tbody>
