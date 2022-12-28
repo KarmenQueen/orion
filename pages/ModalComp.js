@@ -13,14 +13,31 @@ import {
     Input,
     Box,
   } from "@chakra-ui/react";
-  import { useState } from "react";
+  import React, {useLocalStorage} from './useLocalStorage';
+  import { useEffect, useState } from "react";
+  import ramosData from "./ramos.json";
   
   const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
     const [name, setName] = useState(dataEdit.name || "");
     const [email, setEmail] = useState(dataEdit.email || "");
     const [descripcion, setDescripcion] = useState(dataEdit.descripcion || "");
+    const [ramo, setRamo] = useState(dataEdit.ramo || "");
+
+    const [valor, setValor] = useLocalStorage("value","");
+    const [value2, setValue2] = useState("1");
+
+    useEffect(()=>{
+      setValue2(valor);
+    },[]);
   
     const handleSave = () => {
+
+      
+      console.log('value 2:');
+      console.log(value2);
+      console.log('ramo numero:');
+      console.log(ramo);
+
       if (!name || !email || !descripcion) return;
   
       if (emailAlreadyExists()) {
@@ -28,11 +45,11 @@ import {
       }
   
       if (Object.keys(dataEdit).length) {
-        data[dataEdit.index] = { name, email, descripcion };
+        data[dataEdit.index] = { name, email, descripcion, ramo};
       }
   
       const newDataArray = !Object.keys(dataEdit).length
-        ? [...(data ? data : []), { name, email, descripcion }]
+        ? [...(data ? data : []), { name, email, descripcion, ramo}]
         : [...(data ? data : [])];
   
       localStorage.setItem("cad_cliente", JSON.stringify(newDataArray));
@@ -76,6 +93,7 @@ import {
                     placeholder='Ingrese el link que sea compartir'
                     type="email"
                     value={email}
+                    onClick={(e)=> setRamo(value2)}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <FormLabel>Descripcion</FormLabel>
