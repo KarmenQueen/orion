@@ -108,7 +108,24 @@ const App = () => {
                         <Td maxW={isMobile ? 5 : 100}>{name}</Td>
                         <Td maxW={isMobile ? 5 : 100}>{email}</Td>
                         <Td maxW={isMobile ? 5 : 100}>{descripcion}</Td>
+                        <Td p={0}>
+                                    <a className="btn-neonc" 
+                                        href= {email} target="_blank">
+                                        <AiOutlineRocket ></AiOutlineRocket>
+                                    </a>
+                                    
+                            
+                        </Td>
                         
+                        <Td p={0}>
+                            <EditIcon
+                            fontSize={20}
+                            onClick={() => [
+                                setDataEdit({ name, email, descripcion, index }),
+                                onOpen(),
+                            ]}
+                            />
+                        </Td>
                         <Td p={0}>
                             <DeleteIcon
                             fontSize={20}
